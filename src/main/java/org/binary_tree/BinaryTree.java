@@ -26,6 +26,7 @@ public class BinaryTree {
 
     private Node parseInput(String input) {
         if(input==null) return null;
+        if(!input.matches("[0-9,#]+")) return null;
 
         inputIterator=0;
         String[] treeArray = input.split(",");
